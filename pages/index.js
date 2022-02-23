@@ -1,13 +1,13 @@
 import Head from "next/head"
 import Image from "next/image"
-import styles from "../styles/Home.module.scss"
+import styles from "../styles/HomePage.module.scss"
 
-
-
-
-
-export default function Home() {
+export default function HomePage() {
   return (
+
+
+
+
     <div className={styles.container}>
       <Head>
         <title>Portfolio V3 2022 Next.js</title>
@@ -18,11 +18,9 @@ export default function Home() {
 
 
 
-
-
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+          Welcome to <a href="https://nextjs.org">Cats Who Code</a>
         </h1>
 
         <p className={styles.description}>
@@ -74,5 +72,9 @@ export default function Home() {
         </a>
       </footer>
     </div>
+
+
+
+
   )
 }
