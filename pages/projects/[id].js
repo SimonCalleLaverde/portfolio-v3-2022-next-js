@@ -1,15 +1,15 @@
-// EXAMPLE
+// EXAMPLE // our-domain.com/projects/[project]
 
-// .../projects/lambo
-// .../projects/tesla
-// .../projects/ford
+// our-domain.com/projects/lambo
+// our-domain.com/projects/tesla
+// our-domain.com/projects/ford
 
 // Imports
 import { useRouter } from "next/router"
 import Head from "next/head"
 
-// WILL BE "PROJECTS"
-// Car (Dynamic) Component
+// WILL BE THE "PROJECT PAGE"
+// Car Page (Dynamic) Component
 // Destructuring car 'prop' to use in car component
 export default function Car({ car }) {
 	const router = useRouter()
