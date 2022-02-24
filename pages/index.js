@@ -47,13 +47,13 @@ export default function HomePage() {
         <link href="https://db.onlinewebfonts.com/c/4c4c08af466e9ad071b6d69cf44093df?family=Saol+Display+Regular" rel="stylesheet" type="text/css"/>{/*Option 2: "Old+Standard+TT"*/}
       </Head>
 
+      <main className={ styles.main }>
 
 
 
 
 
 
-      <main className={styles.main}>
         <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">Cats Who Code</a>
         </h1>
@@ -64,18 +64,18 @@ export default function HomePage() {
         </p>
 
         <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
+          <a href="/" className={styles.card}>
             <h2>Documentation &rarr;</h2>
             <p>Find in-depth information about Next.js features and API.</p>
           </a>
 
-          <a href="https://nextjs.org/learn" className={styles.card}>
+          <a href="/" className={styles.card}>
             <h2>Learn &rarr;</h2>
             <p>Learn about Next.js in an interactive course with quizzes!</p>
           </a>
 
           <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
+            href="/"
             className={styles.card}
           >
             <h2>Examples &rarr;</h2>
@@ -83,7 +83,7 @@ export default function HomePage() {
           </a>
 
           <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+            href="/"
             className={styles.card}
           >
             <h2>Deploy &rarr;</h2>
@@ -92,6 +92,11 @@ export default function HomePage() {
             </p>
           </a>
         </div>
+
+
+
+
+
       </main>
 
       <footer className={styles.footer}>

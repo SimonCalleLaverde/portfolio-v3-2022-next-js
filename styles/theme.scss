@@ -7,18 +7,18 @@
   box-sizing:border-box;
 }
 html {
-  background-color:$theme-color-beige;//theme-color('beige')//In Case, While Loading
+  //background-color:$theme-color-beige;
   text-rendering:optimizeLegibility;//geometricPrecision
-  font-smooth:always;//
+  font-smooth:always;
   -webkit-font-smoothing:subpixel-antialiased;//antialiased
   -moz-osx-font-smoothing:grayscale;
 }
 body {
   min-height:100vh;
   font-family:$font-light;
-  font-size:17px;
-  background-color:$theme-color-beige;//theme-color('beige')//#C0A79E//#C00C00
-  color:#1A1A1A;//#FFF
+  font-size:15px;//17px
+  background-color:$theme-color-beige;
+  color:$theme-color-grey-dark;
   line-height:1.8;
   letter-spacing:0.5px;
   .text-italic {
@@ -38,137 +38,78 @@ h1, h2, h3, h4, h5, h6 {
 }
 .font-regular {
   font-family:$font-regular!important;
-  &.text-italic {//, .text-italic
+  &.text-italic {
     font-family:$font-regular-italic!important;
   }
 }
 .font-light {
   font-family:$font-light!important;
-  &.text-italic {//, .text-italic
+  &.text-italic {
     font-family:$font-light-italic!important;
   }
 }
 .font-ultra-light {
   font-family:$font-ultra-light!important;
-  &.text-italic {//, .text-italic
+  &.text-italic {
     font-family:$font-ultra-light-italic!important;
   }
 }
 
-// Utility Classes
-.position-relative {
-  position:relative;
+// Headline, Title, Subtitle
+.headline {
+  font-size:2.85rem;
+  line-height:1.02;
 }
-.position-absolute {
-  position:absolute;
+@media only screen and (max-width:576px) {//Down
+  .headline {
+    font-size:2.5rem;
+  }
 }
-.position-fixed {
-  position:fixed;
-}
-.display-block {
-  display:block;
-}
-.display-inline-block {
-  display:inline-block;
-}
-.text-bold {
-  font-weight:bold;
-}
-.text-500 {
-  font-weight:500;
-}
-.text-lighter {
-  font-weight:lighter;
-}
-.text-transform-none {
-  text-transform:none;
-}
-.text-underline {
-  text-decoration:underline;
-}
-.text-uppercase {
-  text-transform:uppercase;
-}
-.text-lowercase {
-  text-transform:lowercase;
-}
-.text-capitalize {
-  text-transform:capitalize;
+@media only screen and (max-width:400px) {//Down
+  .headline {
+    font-size:1.6rem;
+  }
 }
 
-// Flexbox Better Support
-.display-flex {//display:flex
+// Flexbox (Better Support) (Still Missing)
+.display-flex {
   display:-webkit-box;
   display:-ms-flexbox;
-  display:-webkit-flex;//
+  display:-webkit-flex;
   display:flex;
 }
-.flex-direction-row {//flex-direction:row
+.flex-direction-row {
   -webkit-box-orient:horizontal;
   -webkit-box-direction:normal;
   -ms-flex-direction:row;
   flex-direction:row;
 }
-.flex-direction-column {//flex-direction:column
-  //Missing
+.flex-direction-row-reverse {//Missing Support
+  flex-direction:row-reverse;
 }
-.justify-content-center {//justify-content:center
+.flex-direction-column {//Missing Support
+  flex-direction:column;
+}
+.flex-direction-column-reverse {//Missing Support
+  flex-direction:column-reverse;
+}
+.justify-content-center {
   -webkit-box-pack:center;
   -ms-flex-pack:center;
-  -webkit-justify-content:center;//
+  -webkit-justify-content:center;
   justify-content:center;
 }
-.align-items-center {//align-items:center
+.align-items-center {
   -webkit-box-align:center;
   -ms-flex-align:center;
-  -webkit-align-items:center;//
+  -webkit-align-items:center;
   align-items:center;
 }
 
-// Headline, Title, Subtitle
-.headline, .title, .subtitle {
-}
-.text-huge {
-  font-size:2.85rem;
-  line-height:1.02;
-}
-@media only screen and (max-width:576px) {//Down
-  .text-huge {
-    font-size:2.5rem;
-  }
-}
-@media only screen and (max-width:400px) {//Down
-  .text-huge {
-    font-size:1.6rem;
-  }
-}
-
 // Buttons
-button {
+button, a.button {
   cursor:pointer;
-  //line-height:30.6px;
-}
-
-// Input Placeholders
-::-webkit-input-placeholder {
-  font-family:$font-ultra-light;
-  font-size:20px;
-  color:$theme-color-chocolate;//!important
-}
-:-moz-placeholder {//Firefox 18-
-  font-family:$font-ultra-light;
-  font-size:20px;
-  color:$theme-color-chocolate;//!important
-}
-::-moz-placeholder {//Firefox 19+
-  font-family:$font-ultra-light;
-  font-size:20px;
-  color:$theme-color-chocolate;//!important
-}
-:-ms-input-placeholder {
-  font-family:$font-ultra-light;
-  font-size:20px;
-  color:$theme-color-chocolate;//!important
+  //line-height:30px;
 }
 
 // Selection Styles
@@ -178,6 +119,38 @@ button {
 ::-moz-selection {//mozilla firefox
   background-color:rgba(105,169,179,0.7);//Or rgba(37,175,206,0.7) Terminal's
 }
+
+//----------------------------------Form Styles----------------------------------//
+
+// Input Placeholders
+::-webkit-input-placeholder {
+  font-family:$font-ultra-light;
+  font-size:20px;
+  color:$theme-color-chocolate;
+}
+:-moz-placeholder {//Firefox 18-
+  font-family:$font-ultra-light;
+  font-size:20px;
+  color:$theme-color-chocolate;
+}
+::-moz-placeholder {//Firefox 19+
+  font-family:$font-ultra-light;
+  font-size:20px;
+  color:$theme-color-chocolate;
+}
+:-ms-input-placeholder {
+  font-family:$font-ultra-light;
+  font-size:20px;
+  color:$theme-color-chocolate;
+}
+
+
+
+
+
+
+
+
 
 //----------------------------------Section Styles----------------------------------//
 
