@@ -1,5 +1,5 @@
 // Font Face
-$FontsPath:"./fonts/";//https://s3.amazonaws.com/some-project/uploads
+$FontsPath:"./fonts";//https://s3.amazonaws.com/some-project/uploads
 
 @font-face {
 	font-family:"Aileron Regular";
@@ -33,17 +33,17 @@ $FontsPath:"./fonts/";//https://s3.amazonaws.com/some-project/uploads
 	src:url("#{$FontsPath}/Aileron-UltraLightItalic.otf") format("opentype");
 }
 
-// Font Headline
+// Font Headline (https://db.onlinewebfonts.com)
 $font-headline:"Saol Display Regular",serif;
 
-// Font Regular & Regular Italic
+// Font Regular & Regular Italic (Font-Face)
 $font-regular:"Aileron Regular",sans-serif;
 $font-regular-italic:"Aileron Regular Italic",sans-serif;
 
-// Font Light & Light Italic
+// Font Light & Light Italic (Font-Face)
 $font-light:"Aileron Light",sans-serif;
 $font-light-italic:"Aileron Light Italic",sans-serif;
 
-// Font Ultra Light & Font Ultra Light Italic
+// Font Ultra Light & Font Ultra Light Italic (Font-Face)
 $font-ultra-light:"Aileron Ultra Light",sans-serif;
 $font-ultra-light-italic:"Aileron Ultra Light Italic",sans-serif;
