@@ -131,8 +131,21 @@ header {
 }
 
 // Main
-main {
+main.main {
   //min-height:100vh;
+
+
+  // To errase/revise
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  min-height: 100vh;
+  padding: 4rem 0;
+  
+
+
 }
 
 // Form Section
@@ -144,7 +157,29 @@ section.todo-list-section {
 }
 
 // Footer
-footer {
+footer.footer {
+
+
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  padding: 2rem 0;
+  border-top: 1px solid #eaeaea;
+  span.logo {
+    height: 1em;
+    margin-left: 0.5rem;
+  }
+  // a {
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  //   flex-grow: 1;
+  // }
+
+
+
 }
 
 
