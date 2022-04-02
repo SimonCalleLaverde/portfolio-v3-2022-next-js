@@ -5,7 +5,7 @@ import styles from "../styles/HomePage.module.scss"//I'm Modifying
 
 export default function HomePage() {
   return (
-    <div className={ styles.container }>
+    <div>{/*className={ styles.container }*/}
 
       <Head>
         <meta charset="utf-8"/>
@@ -48,68 +48,75 @@ export default function HomePage() {
         <link href="https://db.onlinewebfonts.com/c/4c4c08af466e9ad071b6d69cf44093df?family=Saol+Display+Regular" rel="stylesheet" type="text/css"/>{/*Option 2: "Old+Standard+TT"*/}
       </Head>
 
-      <main className="main">
+      <main className="main">{/*{ styles.main }*/}
+        <div className="container">
 
 
 
 
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Cats Who Code</a>
-        </h1>
 
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
+          <h1 className={styles.title}>
+            Welcome
+          </h1>
 
-        <div className={styles.grid}>
-          <a href="/" className={styles.card}>
-            <h2>Documentation</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
+          <p className={styles.description}>
+            Get started by editing{" "}
+            <code className={styles.code}>pages/index.js</code>
+          </p>
 
-          <a href="/" className={styles.card}>
-            <h2>Learn</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
 
-          <a href="/" className={styles.card}>
-            <h2>Examples</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
 
-          <a href="/" className={styles.card}>
-            <h2>Deploy</h2>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+          <div className={styles.grid}>
+            <a href="/" className={styles.card}>
+              <h2>Documentation</h2>
+              <p>Find in-depth information about Next.js features and API.</p>
+            </a>
+
+            <a href="/" className={styles.card}>
+              <h2>Learn</h2>
+              <p>Learn about Next.js in an interactive course with quizzes!</p>
+            </a>
+
+            <a href="/" className={styles.card}>
+              <h2>Examples</h2>
+              <p>Discover and deploy boilerplate example Next.js projects.</p>
+            </a>
+
+            <a href="/" className={styles.card}>
+              <h2>Deploy</h2>
+              <p>
+                Instantly deploy your Next.js site to a public URL with Vercel.
+              </p>
+            </a>
+          </div>
+
+
+
+
+
         </div>
-
-
-
-
       </main>
 
-      <footer className="footer">
-        {/*<a href="https://simoncallelaverde.github.io/" target="_blank">
+      <footer className="footer">{/*{styles.footer}*/}
+        <div className="container">
+          {/*<a href="" target="_blank">
+            <span>
+              Powered by{' '}
+            </span>
+
+            <span className={ styles.logo }>
+              <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16}/>
+            </span>
+          </a>*/}
+
           <span>
-            Powered by{' '}
+            Designed & Developed by{" "}
           </span>
 
-          <span className={ styles.logo }>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16}/>
-          </span>
-        </a>*/}
-
-        {/* Will check the 'spacing' thing after */}
-        <span>
-          Designed & Developed by{" "}
-        </span>
-
-        <a href="https://simoncallelaverde.github.io/" target="_blank">
-          Simón Calle Laverde
-        </a>
+          <a href="https://simoncallelaverde.github.io/" target="_blank">
+            Simón Calle Laverde
+          </a>
+        </div>
       </footer>
 
     </div>
