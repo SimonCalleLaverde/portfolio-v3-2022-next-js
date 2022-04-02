@@ -1,6 +1,6 @@
 import Head from "next/head"
-import Image from "next/image"
 import Link from "next/link"
+import Image from "next/image"
 import styles from "../styles/HomePage.module.scss"//I'm Modifying
 
 export default function HomePage() {
@@ -8,7 +8,7 @@ export default function HomePage() {
     <div>{/*className={ styles.container }*/}
 
       <Head>
-        <meta charset="utf-8"/>
+        <meta charset="utf-8" key=""/>{/*To Revise It Getting Rendered Twice. Tried "key" As Per Docs But Same*/}
         <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
         <title>Portfolio V3 2022 Next.js</title>
@@ -48,29 +48,28 @@ export default function HomePage() {
         <link href="https://db.onlinewebfonts.com/c/4c4c08af466e9ad071b6d69cf44093df?family=Saol+Display+Regular" rel="stylesheet" type="text/css"/>{/*Option 2: "Old+Standard+TT"*/}
       </Head>
 
-      <main className="main">{/*{ styles.main }*/}
+      <header className="display-flex justify-content-center align-items-center">{/*flex-direction-row*/}
         <div className="container">
-
+          {/*<span className={ styles.logo }>
+            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16}/>
+          </span>*/}
+          
           {/* Temporary */}
-          <h1 className={styles.title}>
+          <h1 className="title">{/*{styles.title}*/}
             Portfolio V3 2022 Next.js
           </h1>
+        </div>
+      </header>
 
+      {/* Temporary */}
+      <main>{/*{ styles.main }*/}
+        <div className="container">
         </div>
       </main>
 
-      <footer className="footer">{/*{styles.footer}*/}
+      {/* Temporary */}
+      <footer className="display-flex justify-content-center align-items-center">{/*{styles.footer}*/}
         <div className="container">
-          {/*<a href="" target="_blank">
-            <span>
-              Powered by{' '}
-            </span>
-
-            <span className={ styles.logo }>
-              <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16}/>
-            </span>
-          </a>*/}
-
           <span>
             Designed & Developed by{" "}
           </span>
